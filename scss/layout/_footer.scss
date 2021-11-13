@@ -1,0 +1,116 @@
+.address {
+  display: block;
+  font-style: normal;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--first-background-color);
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--main-background-color-second-text-color);
+}
+
+.adress-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress-area {
+  color: var(--main-background-color-second-text-color);
+  transition: color var(--time) var(--cubic);
+}
+
+.adress-mail,
+.adress-tel {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--time) var(--cubic);
+}
+
+.adress-area:hover,
+.adress-area:focus,
+.adress-mail:hover,
+.adress-mail:focus,
+.adress-tel:hover,
+.adress-tel:focus {
+  color: var(--accent-color);
+}
+/*форма*/
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-background-color-second-text-color);
+}
+.footer-icon {
+  fill: var(--main-background-color-second-text-color);
+}
+.footer-social-item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-media-list {
+  display: flex;
+}
+.form-footer {
+  display: flex;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  min-width: 200px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--main-background-color-second-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  box-shadow: 0px, 4px, 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--time) var(--cubic);
+}
+.form-btn:hover,
+.form-btn:focus,
+.modal-form-btn:focus,
+.modal-form-btn:hover {
+  background-color: var(--hover-btn-color);
+}
+
+.form-input {
+  padding: 16px;
+  min-width: 358px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0px, 4px, 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-footer-icon {
+  fill: var(--main-background-color-second-text-color);
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
+.form-input:focus,
+.form-input:hover {
+  color: var(--main-background-color-second-text-color);
+  border-color: var(--accent-color);
+}

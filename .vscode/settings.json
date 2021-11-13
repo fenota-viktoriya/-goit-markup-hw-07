@@ -1,10 +1,4 @@
 {
-  "liveServer.settings.port": 5501,
-  "cSpell.words": [
-    "cocial"
-  ]
-}
-
 {
   "liveSassCompile.settings.formats": [
     {
@@ -23,6 +17,6 @@
     ".vscode/**"
   ],
   "liveSassCompile.settings.generateMap": true,
-  "liveServer.settings.port": 1234,
+  "liveServer.settings.port": 1235,
   "liveSassCompile.settings.autoprefix": null
 }
