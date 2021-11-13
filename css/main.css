@@ -13,6 +13,22 @@
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --time: 250ms;
   --background-color-overly: rgba(33, 150, 243, 0.9);
+  --background-color-backdrop: rgba(0, 0, 0, 0.2);
+  --box-shadow-modal-first: rgba(0, 0, 0, 0.12);
+  --box-shadow-modal-second: rgba(0, 0, 0, 0.14);
+  --border-color-modal: rgba(0, 0, 0, 0.1);
+  --border-color-form: rgba(33, 33, 33, 0.2);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
+  --box-shadow-form-footer: rgba(0, 0, 0, 0.15);
+  --activity-description-background: rgba(47, 48, 58, 0.8);
+  --form-input-border: rgba(47, 48, 58, 0.8);
+  --footer-social-background: rgba(255, 255, 255, 0.1);
+  --adress-mail-tel-footer-color: rgba(255, 255, 255, 0.6);
+  --gradient-color: rgba(47, 48, 58, 0.4);
+  --box-shadow-color-third: rgba(0, 0, 0, 0.06);
+  --box-shadow-color-fourth: rgba(0, 0, 0, 0.16);
+  --box-shadow-color-fifth: rgba(0, 0, 0, 0.08);
+  --border-color-footer-form: rgba(255, 255, 255, 0.3);
 }
 
 .visually-hidden {
@@ -135,7 +151,7 @@ img {
   width: 100vw;
   height: 100vh;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--background-color-backdrop);
   opacity: 1;
   transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
 }
@@ -161,7 +177,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--time) var(--cubic);
   background: var(--main-background-color-second-text-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px var(--box-shadow-modal-first), 0px 1px 1px var(--box-shadow-modal-second), 0px 2px 1p var(--background-color-backdrop);
   border-radius: 4px;
 }
 
@@ -179,7 +195,7 @@ img {
   padding: 0;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color-modal);
   border-radius: 50%;
   background: var(--main-background-color-second-text-color);
   color: var(--header-primary-title-color);
@@ -224,7 +240,7 @@ img {
   color: var(--header-primary-title-color);
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--border-color-form);
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
@@ -278,7 +294,7 @@ img {
   color: var(--main-background-color-second-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--box-shadow-form-footer);
   transition: background-color var(--time) var(--cubic);
 }
 
@@ -288,7 +304,7 @@ img {
   width: 100%;
   height: 120px;
   resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--border-color-form);
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
@@ -300,7 +316,7 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--placeholder-color);
 }
 
 .modal-form-checkbox-label {
@@ -465,7 +481,7 @@ img {
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/2/teamwork.jpg");
+  background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url("../images/2/teamwork.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -506,7 +522,7 @@ img {
   color: var(--main-background-color-second-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--box-shadow-form-footer);
   transition: background-color var(--time) var(--cubic);
 }
 
@@ -515,7 +531,6 @@ img {
   background-color: var(--hover-btn-color);
 }
 
-/* наши преимущества*/
 .item-benefits {
   display: flex;
   flex-wrap: wrap;
@@ -580,7 +595,7 @@ img {
   align-items: center;
   width: 100%;
   height: 70px;
-  background: rgba(47, 48, 58, 0.8);
+  background: var(--activity-description-background);
   position: absolute;
   bottom: 0;
 }
@@ -607,7 +622,7 @@ img {
 .team-card {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px var(--box-shadow-modal-first), 0px 1px 1px var(--box-shadow-modal-second), 0px 2px 1px var(--background-color-backdrop);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -713,7 +728,7 @@ img {
 
 .adress-mail,
 .adress-tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-mail-tel-footer-color);
   transition: color var(--time) var(--cubic);
 }
 
@@ -742,7 +757,7 @@ img {
 
 .footer-social-item {
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--footer-social-background);
 }
 
 .footer-social-media-list {
@@ -767,7 +782,7 @@ img {
   color: var(--main-background-color-second-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  box-shadow: 0px, 4px, 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px, 4px, 4px var(--box-shadow-form-footer);
   transition: background-color var(--time) var(--cubic);
 }
 
@@ -782,10 +797,10 @@ img {
   padding: 16px;
   min-width: 358px;
   margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--border-color-footer-form);
   background-color: transparent;
   box-sizing: border-box;
-  filter: drop-shadow(0px, 4px, 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px, 4px, 4px var(--box-shadow-form-footer));
   border-radius: 4px;
   cursor: pointer;
 }
@@ -833,7 +848,7 @@ img {
 .btn-filters:focus {
   color: var(--main-background-color-second-text-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px var(--border-color-modal), 0px 1px 2px var(--box-shadow-color-fifth), 0px 2px 2px var(--box-shadow-modal-first);
 }
 
 .item-projects {
@@ -851,7 +866,7 @@ img {
 
 .link-project-hover:focus,
 .link-project-hover:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px var(--box-shadow-modal-first), 0px 4px 4px var(--box-shadow-color-third), 1px 4px 6px var(--box-shadow-color-fourth);
 }
 
 .link-project-hover {

@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--background-color-backdrop);
   opacity: 1;
   transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
 }

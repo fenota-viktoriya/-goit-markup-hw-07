@@ -32,7 +32,7 @@
 
 .adress-mail,
 .adress-tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-mail-tel-footer-color);
   transition: color var(--time) var(--cubic);
 }
 
@@ -59,7 +59,7 @@
 }
 .footer-social-item {
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--footer-social-background);
 }
 .footer-social-media-list {
   display: flex;
@@ -82,7 +82,7 @@
   color: var(--main-background-color-second-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  box-shadow: 0px, 4px, 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px, 4px, 4px var(--box-shadow-form-footer);
   transition: background-color var(--time) var(--cubic);
 }
 .form-btn:hover,
@@ -96,10 +96,10 @@
   padding: 16px;
   min-width: 358px;
   margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--border-color-footer-form);
   background-color: transparent;
   box-sizing: border-box;
-  filter: drop-shadow(0px, 4px, 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px, 4px, 4px var(--box-shadow-form-footer));
   border-radius: 4px;
   cursor: pointer;
 }
