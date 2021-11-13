@@ -10,7 +10,7 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -84,12 +84,12 @@
   fill: var(--primary-text-icon-color);
 }
 
-.i-envelope {
+.header__mail-icon {
   height: 12px;
   width: 16px;
   fill: currentColor;
 }
-.i-smartphone {
+.header__tel-icon {
   height: 16px;
   width: 10px;
   fill: currentColor;
