@@ -28,9 +28,11 @@
   color: var(--accent-color);
 }
 
-.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background-image: url(../images/svg/icon-check.svg);
-}
-.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  border-color: var(--accent-color);
+.modal-form-checkbox {
+  &:checked + .modal-form-checkbox-label::before {
+    background-image: url(../images/svg/icon-check.svg);
+  }
+  &:focus + .modal-form-checkbox-label::before {
+    border-color: var(--accent-color);
+  }
 }

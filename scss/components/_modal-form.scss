@@ -50,11 +50,13 @@
   height: 40px;
   margin-top: 4px;
 }
-
-.modal-form-input:hover + .modal-form-icon,
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
+.modal-form-input {
+  &:hover + .modal-form-icon,
+  &:focus + .modal-form-icon {
+    fill: var(--accent-color);
+  }
 }
+
 .modal-form-icon {
   display: block;
   color: var(--header-primary-title-color);
