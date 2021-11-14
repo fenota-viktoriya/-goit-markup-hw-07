@@ -7,26 +7,27 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-icon-color);
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 1px solid var(--header-primary-title-color);
+    border-radius: 4px;
+    background-color: var(--main-background-color-second-text-color);
+    background-image: url(../images/svg/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: background-image var(--time) var(--cubic), border-color var(--time) var(--cubic);
+  }
 }
 .modal-form-checkbox-link {
   color: var(--accent-color);
 }
-.modal-form-checkbox-label::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border: 1px solid var(--header-primary-title-color);
-  border-radius: 4px;
-  background-color: var(--main-background-color-second-text-color);
-  background-image: url(../images/svg/Vector.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  transition: background-image var(--time) var(--cubic), border-color var(--time) var(--cubic);
-}
+
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
   background-image: url(../images/svg/icon-check.svg);
 }

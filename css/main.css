@@ -45,7 +45,7 @@
 }
 
 body {
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -123,7 +123,11 @@ img {
   transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic);
 }
 
-.social-link:hover,
+.social-link:hover {
+  color: var(--main-background-color-second-text-color);
+  background-color: var(--accent-color);
+}
+
 .social-link:focus {
   color: var(--main-background-color-second-text-color);
   background-color: var(--accent-color);
@@ -203,8 +207,11 @@ img {
   cursor: pointer;
 }
 
-.modal-button-close:focus,
 .modal-button-close:hover {
+  color: var(--accent-color);
+}
+
+.modal-button-close:focus {
   color: var(--accent-color);
 }
 
@@ -247,20 +254,22 @@ img {
   transition: border-color var(--time) var(--cubic);
 }
 
+.modal-form-input:hover {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
 .modal-form-block {
   display: block;
   position: relative;
   color: var(--header-primary-title-color);
   height: 40px;
   margin-top: 4px;
-}
-
-.modal-form-input:hover,
-.modal-form-input:focus,
-.modal-form-massage:focus,
-.modal-form-massage:hover {
-  outline: none;
-  border-color: var(--accent-color);
 }
 
 .modal-form-input:hover + .modal-form-icon,
@@ -298,6 +307,14 @@ img {
   transition: background-color var(--time) var(--cubic);
 }
 
+.modal-form-btn:hover {
+  background-color: var(--hover-btn-color);
+}
+
+.modal-form-btn:focus {
+  background-color: var(--hover-btn-color);
+}
+
 .modal-form-massage {
   margin-top: 4px;
   padding: 12px 16px;
@@ -309,6 +326,16 @@ img {
   border-radius: 4px;
   cursor: pointer;
   transition: border-color var(--time) var(--cubic);
+}
+
+.modal-form-massage:hover {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-form-massage:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 /*Использую так потому, что добавила placeholder и в остальные поля */
@@ -330,10 +357,6 @@ img {
   color: var(--primary-text-icon-color);
 }
 
-.modal-form-checkbox-link {
-  color: var(--accent-color);
-}
-
 .modal-form-checkbox-label::before {
   content: "";
   display: block;
@@ -349,6 +372,10 @@ img {
   background-position: center;
   cursor: pointer;
   transition: background-image var(--time) var(--cubic), border-color var(--time) var(--cubic);
+}
+
+.modal-form-checkbox-link {
+  color: var(--accent-color);
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
@@ -414,6 +441,15 @@ img {
   position: relative;
   transition: color var(--time) var(--cubic);
   padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.nav__menu-link:hover {
+  color: var(--accent-color);
+}
+
+.nav__menu-link:focus {
+  color: var(--accent-color);
 }
 
 .nav__menu-link-current::after {
@@ -427,21 +463,22 @@ img {
   background-color: var(--accent-color);
 }
 
-.nav__menu-link:hover,
-.nav__menu-link:focus {
-  color: var(--accent-color);
-}
-
-.nav__menu-link.current {
-  color: var(--accent-color);
-}
-
 .header__mail,
 .header__tel {
   display: flex;
   align-items: center;
   color: var(--primary-text-icon-color);
   transition: color var(--time) var(--cubic);
+}
+
+.header__mail:hover,
+.header__tel:hover {
+  color: var(--accent-color);
+}
+
+.header__mail:focus,
+.header__tel:focus {
+  color: var(--accent-color);
 }
 
 .header__contact-item {
@@ -463,13 +500,6 @@ img {
   height: 16px;
   width: 10px;
   fill: currentColor;
-}
-
-.header__mail:focus,
-.header__mail:hover,
-.header__tel:focus,
-.header__tel:hover {
-  color: var(--accent-color);
 }
 
 .section-hero {
@@ -526,7 +556,10 @@ img {
   transition: background-color var(--time) var(--cubic);
 }
 
-.main-btn:hover,
+.main-btn:hover {
+  background-color: var(--hover-btn-color);
+}
+
 .main-btn:focus {
   background-color: var(--hover-btn-color);
 }
@@ -667,9 +700,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.our-clients-link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color-second);
@@ -678,14 +708,18 @@ img {
   transition: border-color var(--time) var(--cubic), color var(--time) var(--cubic);
 }
 
-.our-clients-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.our-clients-link:focus,
 .our-clients-link:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.our-clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.our-clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .our-clients-icon {
@@ -726,17 +760,26 @@ img {
   transition: color var(--time) var(--cubic);
 }
 
+.adress-area:hover {
+  color: var(--accent-color);
+}
+
+.adress-area:focus {
+  color: var(--accent-color);
+}
+
 .adress-mail,
 .adress-tel {
   color: var(--adress-mail-tel-footer-color);
   transition: color var(--time) var(--cubic);
 }
 
-.adress-area:hover,
-.adress-area:focus,
 .adress-mail:hover,
+.adress-tel:hover {
+  color: var(--accent-color);
+}
+
 .adress-mail:focus,
-.adress-tel:hover,
 .adress-tel:focus {
   color: var(--accent-color);
 }
@@ -786,10 +829,11 @@ img {
   transition: background-color var(--time) var(--cubic);
 }
 
-.form-btn:hover,
-.form-btn:focus,
-.modal-form-btn:focus,
-.modal-form-btn:hover {
+.form-btn:hover {
+  background-color: var(--hover-btn-color);
+}
+
+.form-btn:focus {
   background-color: var(--hover-btn-color);
 }
 
@@ -803,6 +847,15 @@ img {
   filter: drop-shadow(0px, 4px, 4px var(--box-shadow-form-footer));
   border-radius: 4px;
   cursor: pointer;
+  color: var(--main-background-color-second-text-color);
+}
+
+.form-input:hover {
+  border-color: var(--accent-color);
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
 }
 
 .form-footer-icon {
@@ -810,12 +863,6 @@ img {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-}
-
-.form-input:focus,
-.form-input:hover {
-  color: var(--main-background-color-second-text-color);
-  border-color: var(--accent-color);
 }
 
 .item-menu-filters {
@@ -844,7 +891,12 @@ img {
   transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic), box-shadow var(--time) var(--cubic);
 }
 
-.btn-filters:hover,
+.btn-filters:hover {
+  color: var(--main-background-color-second-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px var(--border-color-modal), 0px 1px 2px var(--box-shadow-color-fifth), 0px 2px 2px var(--box-shadow-modal-first);
+}
+
 .btn-filters:focus {
   color: var(--main-background-color-second-text-color);
   background-color: var(--accent-color);
@@ -864,14 +916,25 @@ img {
   margin-top: 30px;
 }
 
-.link-project-hover:focus,
+.link-project-hover {
+  display: block;
+  transition: box-shadow var(--time) var(--cubic);
+}
+
 .link-project-hover:hover {
   box-shadow: 0px 1px 1px var(--box-shadow-modal-first), 0px 4px 4px var(--box-shadow-color-third), 1px 4px 6px var(--box-shadow-color-fourth);
 }
 
-.link-project-hover {
-  display: block;
-  transition: box-shadow var(--time) var(--cubic);
+.link-project-hover:hover .project-overly {
+  transform: translateY(0);
+}
+
+.link-project-hover:focus {
+  box-shadow: 0px 1px 1px var(--box-shadow-modal-first), 0px 4px 4px var(--box-shadow-color-third), 1px 4px 6px var(--box-shadow-color-fourth);
+}
+
+.link-project-hover:focus .project-overly {
+  transform: translateY(0);
 }
 
 .title-img {
@@ -922,10 +985,5 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--main-background-color-second-text-color);
-}
-
-.link-project-hover:focus .project-overly,
-.link-project-hover:hover .project-overly {
-  transform: translateY(0);
 }
 /*# sourceMappingURL=main.css.map */

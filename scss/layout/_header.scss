@@ -47,6 +47,13 @@
   position: relative;
   transition: color var(--time) var(--cubic);
   padding-bottom: 32px;
+  padding-top: 32px;
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .nav__menu-link-current::after {
   position: absolute;
@@ -59,21 +66,18 @@
   background-color: var(--accent-color);
 }
 
-.nav__menu-link:hover,
-.nav__menu-link:focus {
-  color: var(--accent-color);
-}
-
-.nav__menu-link.current {
-  color: var(--accent-color);
-}
-
 .header__mail,
 .header__tel {
   display: flex;
   align-items: center;
   color: var(--primary-text-icon-color);
   transition: color var(--time) var(--cubic);
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header__contact-item {
@@ -93,11 +97,4 @@
   height: 16px;
   width: 10px;
   fill: currentColor;
-}
-
-.header__mail:focus,
-.header__mail:hover,
-.header__tel:focus,
-.header__tel:hover {
-  color: var(--accent-color);
 }

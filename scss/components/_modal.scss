@@ -31,8 +31,10 @@
   color: var(--header-primary-title-color);
   transition: color var(--time) var(--cubic);
   cursor: pointer;
-}
-.modal-button-close:focus,
-.modal-button-close:hover {
-  color: var(--accent-color);
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+  }
 }

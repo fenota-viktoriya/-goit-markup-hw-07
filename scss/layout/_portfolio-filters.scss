@@ -23,12 +23,16 @@
   cursor: pointer;
   transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic),
     box-shadow var(--time) var(--cubic);
-}
-
-.btn-filters:hover,
-.btn-filters:focus {
-  color: var(--main-background-color-second-text-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px var(--border-color-modal), 0px 1px 2px var(--box-shadow-color-fifth),
-    0px 2px 2px var(--box-shadow-modal-first);
+  &:hover {
+    color: var(--main-background-color-second-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px var(--border-color-modal), 0px 1px 2px var(--box-shadow-color-fifth),
+      0px 2px 2px var(--box-shadow-modal-first);
+  }
+  &:focus {
+    color: var(--main-background-color-second-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px var(--border-color-modal), 0px 1px 2px var(--box-shadow-color-fifth),
+      0px 2px 2px var(--box-shadow-modal-first);
+  }
 }
